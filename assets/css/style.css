@@ -47,6 +47,7 @@ a:hover {
 
 #email-navbar-item:hover {
 	border: none;
+	cursor: default;
 }
 
 #body-content {
@@ -129,7 +130,7 @@ a:hover {
 }
 
 #description-title {
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 18px;
 }
 
@@ -144,14 +145,14 @@ a:hover {
 
 .experience-date {
 	color: #939393;
-	font-family: 'Optima';
+	/*font-family: 'Optima';*/
 	font-size: 16px;
 }
 
 .experience-title {
-	font-family: 'Optima';
+	/*font-family: 'Optima';*/
 	font-weight: 600;
-	font-size: 19px;
+	font-size: 18px;
 }
 
 .link {
