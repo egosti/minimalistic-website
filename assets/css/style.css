@@ -20,7 +20,7 @@ a:hover {
 
 .navbar-item {
 	display: inline-block;
-	margin-top: 70px;
+	margin-top: 60px;
 	margin-left: 40px;
 	text-decoration: none;
 	padding-bottom: 3px;
@@ -92,11 +92,12 @@ a:hover {
 /* ABOUT PAGE */
 
 #emily-pic {
-	width: 30%;
+	width: 25%;
 	object-fit: cover;
 	margin: 50px;
 	margin-top: 0;
 	margin-left: 50%;
+	margin-bottom: 40px;
 	transform: translate(-50%, 0);
 }
 
@@ -127,6 +128,8 @@ a:hover {
 #description {
 	padding: 20%;
 	padding-top: 0;
+	padding-right: 10%;
+	padding-bottom: 0;
 }
 
 #description-title {
@@ -137,6 +140,7 @@ a:hover {
 #experience-wrapper {
 	margin: 10%;
 	margin-top: 0;
+	margin-left: 5%;
 }
 
 .experience-item {
