@@ -120,7 +120,7 @@ a:hover {
 #right-side {
 	margin-top: 3%;
 	width: 60%;
-	height: 58%;
+	height: 62%;
 	float: left;
 	font-size: 14px;
 }
@@ -143,18 +143,33 @@ a:hover {
 	margin-left: 5%;
 }
 
+#bottom-fade:before {
+  	content: '';
+  	width: 55%;
+  	height: 7%;
+  	bottom: 18%;
+  	position: absolute;
+  	background: linear-gradient(transparent 5px, white);
+}
+
+#top-fade:before {
+  	content: '';
+  	width: 55%;
+  	height: 7%;    
+  	position: absolute;
+  	background: linear-gradient(white, transparent 60px);
+}
+
 .experience-item {
 	margin-bottom: 40px;
 }
 
 .experience-date {
 	color: #939393;
-	/*font-family: 'Optima';*/
 	font-size: 16px;
 }
 
 .experience-title {
-	/*font-family: 'Optima';*/
 	font-weight: 600;
 	font-size: 18px;
 }
