@@ -12,12 +12,12 @@ a:hover {
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('assets/fonts/Gotham-Bold.otf');
+	src: url('assets/fonts/Gotham-Bold.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('assets/fonts/Gotham-Book.otf');
+	src: url('assets/fonts/Gotham-Book.otf') format('opentype');
 }
 
 /* INDEX PAGE */
