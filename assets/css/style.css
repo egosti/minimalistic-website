@@ -50,7 +50,21 @@ a:hover {
 	cursor: default;
 }
 
-#body-content {
+#cover-trace {
+	width: 35%;
+	margin-left: 18%;
+	margin-top: 5%;
+	object-fit: cover;
+	float: left;
+}
+
+#cover-pic {
+	position: absolute;
+	width: 50%;
+	object-fit: cover;
+	opacity: 0.5;
+	left: 19%;
+	display: none;
 }
 
 #intro {
@@ -58,14 +72,15 @@ a:hover {
 	font-weight: 800;
 	font-size: 34px;
 	margin-top: 10%;
-	margin-left: 55%;
+	float: left;
 }
 
 #footer {
 	position: absolute;
 	width: 100%;
 	height: 40px;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
+	padding-top: 20px;
 	font-family: 'Gotham', book;
 	bottom: 0;
 	z-index: 5;
