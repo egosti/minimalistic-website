@@ -10,16 +10,6 @@ a:hover {
 	transition: .2s linear;
 }
 
-@font-face {
-	font-family: 'Gotham';
-	src: url('assets/fonts/Gotham-Bold.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Gotham';
-	src: url('assets/fonts/Gotham-Book.otf') format('opentype');
-}
-
 /* INDEX PAGE */
 
 #navbar {
