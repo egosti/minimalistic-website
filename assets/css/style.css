@@ -60,10 +60,41 @@ a:hover {
 
 #cover-pic {
 	position: absolute;
-	width: 50%;
+	width: 40%;
 	object-fit: cover;
-	opacity: 0.5;
-	left: 19%;
+	opacity: 0.6;
+	left: 18%;
+	z-index: -1;
+}
+
+#pic-description {
+	position: absolute;
+	left: 55%;
+	top: 20%;
+	font-family: 'Gotham', book;
+	text-align: center;
+	color: white;
+}
+
+#hover-prompt-pic {
+	position: absolute;
+	left: 18%;
+	top: 25%;
+	width: 50px;
+	object-fit: cover;
+}
+
+#hover-prompt {
+	position: absolute;
+	left: 23%;
+	top: 23%;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #939393;
+	cursor: pointer;
+}
+
+#name {
 	display: none;
 }
 
@@ -199,5 +230,155 @@ a:hover {
 .link:hover {
 	background-color: white;
 	transition: .2s linear;
+}
+
+/* SIDEBAR */
+
+.sidebar-wrapper {
+	position: fixed;
+    z-index: 10;
+	width: 280px;
+	height: 100%;
+	background-color: white;
+	-webkit-transform: translateX(-280px);
+	-webkit-transition: all 0.3s;
+	-moz-transform: translateX(-280px);
+	-moz-transition: all 0.3s;
+	-ms-transform: translateX(-280px);
+	-ms-transition: all 0.3s;
+}
+
+.sidebar-item {
+	/*font-weight: 700;*/
+	font-size: 16px;
+	color: #939393;
+    font-family: 'Gotham', book;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidebar-item:hover {
+  color: #FFA987;
+}
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	display: none;
+}
+
+.sidebar-icon {
+  display: inline;
+  width: 30px;
+}
+
+#nav-toggle {
+	position: absolute;
+	left: 50%; top: 50%;
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #939393;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px;
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+.sidebar-wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.button-active {
+	-webkit-transform: translateX(280px);
+	-moz-transform: translateX(280px);
+	transform: translateX(280px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+#main-nav ul {
+  position: absolute;
+  top: 10px;
+}
+
+/* get rid of hover effect */
+
+
+@media screen and (max-width: 1000px) {
+	#hover-prompt, #hover-prompt-pic {
+		display: none;
+	}
+}
+
+
+/* iPhone */
+
+@media screen and (max-width: 480px) {
+
+	#sidebar-button {
+		display: block;
+	}
+
+	#navbar {
+		display: none;
+	}
+
+    #email-navbar-item, #intro, #hover-prompt, #hover-prompt-pic, .footer-item, #footer {
+    	display: none;
+    }
+
+    .footer-icon {
+    	align-content: center;
+    }
+
+    #cover-trace {
+    	width: 70%;
+    	margin-top: 10%;
+    }
+
+    #name {
+    	display: block;
+    	font-family: 'Gotham', bold;
+    	position: absolute;
+    	width: 100%;
+    	text-align: center;
+    	bottom: 20%;
+    	font-size: 20px;
+    }
+
 }
 

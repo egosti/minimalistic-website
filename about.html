@@ -15,81 +15,114 @@
     </style>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" href="assets/img/emily-logo.png">
+    <script src="assets/script/animate.js"></script>
   </head>
 
   <body>
 
-  	<div id="navbar">
-  		<a href="index.html" class="navbar-item" style="margin-left: 50px">Home</a>
-  		<a href="about.html" class="navbar-item" id="current-navbar-item">About</a>
-      <div class="navbar-item" id="email-navbar-item">emily.gosti@gmail.com</div>
-  	</div>
-
-    <div id="about-content-wrapper">
-      <div class="about-content" id="left-side">
-        <img src="assets/img/emily.png" id="emily-pic">
-        <div id="description">
-          <div id="description-title">I'm currently a second-year undergraduate studying at UC Berkeley.</div> <br>
-          I am pursuing an Electrical Engineering and Computer Sciences degree. In my free time, I 
-          enjoy traveling to new places, photography,
-          staying fit, web design, and rooting for the Golden State Warriors.
-        </div>
-      </div>
-      <div class="about-content" id="right-side">
-        <div id="experience-wrapper">
-          <div id="top-fade"></div>
-          <div id="bottom-fade"></div>
-          <br><br>
-          <div class="experience-item">
-            <div class="experience-title">Software Engineering Intern @ Square</div>
-            <div class="experience-date">May 2018 - August 2018</div>
-            <div class="experience-description">
-              <ul>
-                <li>An adventure I have not yet embarked on</li>
-              </ul>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-title">Engineering Practicum Intern @ Google</div>
-            <div class="experience-date">May 2017 - August 2017</div>
-            <div class="experience-description">
-              <ul>
-                <li>Revamped the Payments internal demo server, used to test all of Google’s customer-facing buy flows, using Closure Templates, HTML, and dynamic CSS</li>
-                <li>Utilized RPCs and protocol buffers for communication between web client and Java backend</li>
-                <li>Piloted the use in the Payments team of a new internal Javascript front-end development tool using the Closure compiler and framework</li>
-              </ul>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-title">Web Developer @ <a href="http://innovativedesign.club/" target="_blank" class="link">Innovative Design</a></div>
-            <div class="experience-date">September 2017 - Present</div>
-            <div class="experience-description">
-              <ul>
-                <li>Using Scratch and React to design, develop, and deploy websites for student organizations</li>
-              </ul>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-title">EE16A Mentor/Curriculum Creator @ <a href="https://csmberkeley.github.io/#/" target="_blank" class="link">Computer Science Mentors</a></div>
-            <div class="experience-date">May 2017 - November 2017</div>
-            <div class="experience-description">
-              <ul>
-                <li>Developed worksheet problems and pilot curriculum for new CSM EE16A class</li>
-                <li>Taught a 1.5 hour long section to students every week</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="sidebar-button">
+        <a id="nav-toggle">
+            <span></span>
+        </a>
     </div>
+    <nav class="sidebar-wrapper">
+      <div id="main-nav">
+        <ul>
+          <a href="index.html">
+            <li class="sidebar-item">home</li>
+          </a>
+          <a href="about.html">
+            <li class="sidebar-item">about</li>
+          </a>
+          <div>
+            <li class="sidebar-item">email</li>
+          </div>
+          <a href="https://github.com/egosti" target="_blank">
+            <li class="sidebar-item">github</li>
+          </a>
+          <a href="https://www.linkedin.com/in/egosti/" target="_blank">
+            <li class="sidebar-item">linkedin</li>
+          </a>
+          <a href="assets/img/resume.pdf" target="_blank">
+            <li class="sidebar-item">resume</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
 
-    <div id="footer">
-      <div class="footer-item" style="margin-left: 50px">EMILY GOSTI</div>
-      <a href="https://egosti.github.io/personal_website" class="footer-item" target="_blank">v1</a>
-      <a href="https://egosti.github.io" class="footer-item" target="_blank">v2</a>
-      <a href="assets/img/resume.pdf" class="footer-icon" target="_blank" style="margin-right: 50px">resume</a>
-      <a href="https://github.com/egosti" class="footer-icon" target="_blank">github</a>
-      <a href="https://www.linkedin.com/in/egosti/" class="footer-icon" target="_blank">linkedin</a>
+    <div class="page-wrapper">
+    	<div id="navbar">
+    		<a href="index.html" class="navbar-item" style="margin-left: 50px">Home</a>
+    		<a href="about.html" class="navbar-item" id="current-navbar-item">About</a>
+        <div class="navbar-item" id="email-navbar-item">emily.gosti@gmail.com</div>
+    	</div>
+
+      <div id="about-content-wrapper">
+        <div class="about-content" id="left-side">
+          <img src="assets/img/emily.png" id="emily-pic">
+          <div id="description">
+            <div id="description-title">I'm currently a second-year undergraduate studying at UC Berkeley.</div> <br>
+            I am pursuing an Electrical Engineering and Computer Sciences degree. In my free time, I 
+            enjoy traveling to new places, staying fit,
+            web design, photography, and rooting for the Golden State Warriors.
+          </div>
+        </div>
+        <div class="about-content" id="right-side">
+          <div id="experience-wrapper">
+            <div id="top-fade"></div>
+            <div id="bottom-fade"></div>
+            <br><br>
+            <div class="experience-item">
+              <div class="experience-title">Software Engineering Intern @ Square</div>
+              <div class="experience-date">May 2018 - August 2018</div>
+              <div class="experience-description">
+                <ul>
+                  <li>An adventure I have not yet embarked on</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-title">Engineering Practicum Intern @ Google</div>
+              <div class="experience-date">May 2017 - August 2017</div>
+              <div class="experience-description">
+                <ul>
+                  <li>Revamped the Payments internal demo server, used to test all of Google’s customer-facing buy flows, using Closure Templates, HTML, and dynamic CSS</li>
+                  <li>Utilized RPCs and protocol buffers for communication between web client and Java backend</li>
+                  <li>Piloted the use in the Payments team of a new internal Javascript front-end development tool using the Closure compiler and framework</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-title">Web Developer @ <a href="http://innovativedesign.club/" target="_blank" class="link">Innovative Design</a></div>
+              <div class="experience-date">September 2017 - Present</div>
+              <div class="experience-description">
+                <ul>
+                  <li>Using Scratch and React to design, develop, and deploy websites for student organizations</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-title">EE16A Mentor/Curriculum Creator @ <a href="https://csmberkeley.github.io/#/" target="_blank" class="link">Computer Science Mentors</a></div>
+              <div class="experience-date">May 2017 - December 2017</div>
+              <div class="experience-description">
+                <ul>
+                  <li>Developed worksheet problems and pilot curriculum for new CSM EE16A class</li>
+                  <li>Taught a weekly 1.5 hour long section to a group of 5 students</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-item" style="margin-left: 50px">EMILY GOSTI</div>
+        <a href="https://egosti.github.io/personal_website" class="footer-item" target="_blank">v1</a>
+        <a href="https://egosti.github.io" class="footer-item" target="_blank">v2</a>
+        <a href="assets/img/resume.pdf" class="footer-icon" target="_blank" style="margin-right: 50px">resume</a>
+        <a href="https://github.com/egosti" class="footer-icon" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/egosti/" class="footer-icon" target="_blank">linkedin</a>
+      </div>
     </div>
 
   </body>

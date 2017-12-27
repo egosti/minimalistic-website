@@ -16,35 +16,76 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" href="assets/img/emily-logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/script/animate.js"></script>
     <script src="assets/script/script.js"></script>
   </head>
 
   <body>
 
-  	<div id="navbar">
-  		<a href="index.html" class="navbar-item" id="current-navbar-item" style="margin-left: 50px">Home</a>
-  		<a href="about.html" class="navbar-item">About</a>
-      <div class="navbar-item" id="email-navbar-item">emily.gosti@gmail.com</div>
-  	</div>
+    <div id="sidebar-button">
+        <a id="nav-toggle">
+            <span></span>
+        </a>
+    </div>
+    <nav class="sidebar-wrapper">
+      <div id="main-nav">
+        <ul>
+          <a href="index.html">
+            <li class="sidebar-item">home</li>
+          </a>
+          <a href="about.html">
+            <li class="sidebar-item">about</li>
+          </a>
+          <div>
+            <li class="sidebar-item">email</li>
+          </div>
+          <a href="https://github.com/egosti" target="_blank">
+            <li class="sidebar-item">github</li>
+          </a>
+          <a href="https://www.linkedin.com/in/egosti/" target="_blank">
+            <li class="sidebar-item">linkedin</li>
+          </a>
+          <a href="assets/img/resume.pdf" target="_blank">
+            <li class="sidebar-item">resume</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
 
-    <div id="body-content">
-      <img src="assets/img/prague-trace.png" id="cover-trace">
-      <img src="assets/img/prague.jpg" id="cover-pic">
-      <div id="intro">
-        Hello! I'm Emily, <br>
-        And I Am A <div class="typewrite" data-period="2000" data-type='["Software Engineer", "Musician", "Traveler", "Designer"]'>
-          <span class="wrap"></span>
+    <div class="page-wrapper">
+    	<div id="navbar">
+    		<a href="index.html" class="navbar-item" id="current-navbar-item" style="margin-left: 50px">Home</a>
+    		<a href="about.html" class="navbar-item">About</a>
+        <div class="navbar-item" id="email-navbar-item">emily.gosti@gmail.com</div>
+    	</div>
+
+      <div id="body-content">
+        <img src="assets/img/prague-trace.png" id="cover-trace">
+        <img src="assets/img/prague.jpg" id="cover-pic">
+        <img src="assets/img/hover-here.png" id="hover-prompt-pic">
+        <div id="hover-prompt"></div>
+        <div id="name">EMILY GOSTI</div>
+        <div id="pic-description">
+          Prague, CZ <br>
+          Old Town Square <br>
+          7/3/2014
+        </div>
+        <div id="intro">
+          Hello! I'm Emily, <br>
+          And I Am A <div class="typewrite" data-period="2000" data-type='["Software Engineer", "Musician", "Traveler", "Designer"]'>
+            <span class="wrap"></span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="footer">
-      <div class="footer-item" style="margin-left: 50px">EMILY GOSTI</div>
-      <a href="https://egosti.github.io/personal_website" class="footer-item" target="_blank">v1</a>
-      <a href="https://egosti.github.io" class="footer-item" target="_blank">v2</a>
-      <a href="assets/img/resume.pdf" class="footer-icon" target="_blank" style="margin-right: 50px">resume</a>
-      <a href="https://github.com/egosti" class="footer-icon" target="_blank">github</a>
-      <a href="https://www.linkedin.com/in/egosti/" class="footer-icon" target="_blank">linkedin</a>
+      <div id="footer">
+        <div class="footer-item" style="margin-left: 50px">EMILY GOSTI</div>
+        <a href="https://egosti.github.io/personal_website" class="footer-item" target="_blank">v1</a>
+        <a href="https://egosti.github.io" class="footer-item" target="_blank">v2</a>
+        <a href="assets/img/resume.pdf" class="footer-icon" target="_blank" style="margin-right: 50px">resume</a>
+        <a href="https://github.com/egosti" class="footer-icon" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/egosti/" class="footer-icon" target="_blank">linkedin</a>
+      </div>
     </div>
 
   </body>
