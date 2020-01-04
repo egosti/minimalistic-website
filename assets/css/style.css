@@ -427,10 +427,18 @@ and (max-device-width : 667px) {
     #left-side {
 		margin-top: 25%;
 		width: 90%;
+		height: auto;
+		overflow: none;
 	}
 
 	#right-side {
 		width: 90%;
+	}
+
+	#right-side {
+		margin-top: 3%;
+		width: 60%;
+		height: auto;
 	}
 
 	#emily-pic {
@@ -463,7 +471,6 @@ and (max-device-width : 667px) {
     #about-content-wrapper {
     	display: flex;
     	justify-content: center;
-    	/*flex-direction: column;*/
     	flex-wrap: wrap;
     	width: 100%;
     }
