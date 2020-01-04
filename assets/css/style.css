@@ -282,26 +282,26 @@ a:hover {
 .sidebar-wrapper {
 	position: fixed;
     z-index: 10;
-	width: 280px;
+	width: 400px;
 	height: 100%;
 	background-color: white;
-	-webkit-transform: translateX(-280px);
+	-webkit-transform: translateX(-400px);
 	-webkit-transition: all 0.3s;
-	-moz-transform: translateX(-280px);
+	-moz-transform: translateX(-400px);
 	-moz-transition: all 0.3s;
-	-ms-transform: translateX(-280px);
+	-ms-transform: translateX(-400px);
 	-ms-transition: all 0.3s;
 }
 
 .sidebar-item {
-	/*font-weight: 700;*/
-	font-size: 16px;
+	font-size: 60px;
 	color: #939393;
     font-family: 'Gotham', book;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 60px;
 	padding-right: 20px;
+	text-decoration: none;
 }
 
 .sidebar-item:hover {
@@ -332,12 +332,12 @@ a:hover {
 }
 
 #nav-toggle {
-	padding: 10px 30px 15px 0px;
+	padding: 60px 30px 15px 15px;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	height: 3px;
-	width: 30px;
+	height: 10px;
+	width: 100px;
 	background: #939393;
 	position: absolute;
 	display: block;
@@ -345,11 +345,11 @@ a:hover {
 }
 
 #nav-toggle span:before {
-	top: -10px;
+	top: -30px;
 }
 
 #nav-toggle span:after {
-	bottom: -10px;
+	bottom: -30px;
 }
 
 .sidebar-wrapper ul {
@@ -364,9 +364,9 @@ a:hover {
 }
 
 .button-active {
-	-webkit-transform: translateX(280px);
-	-moz-transform: translateX(280px);
-	transform: translateX(280px);
+	-webkit-transform: translateX(400px);
+	-moz-transform: translateX(400px);
+	transform: translateX(400px);
 }
 
 .sidebar-active {
@@ -380,19 +380,11 @@ a:hover {
   top: 10px;
 }
 
-/* get rid of hover effect */
-
-
-@media screen and (max-width: 1000px) {
-	#hover-prompt, #hover-prompt-pic {
-		display: none;
-	}
-}
-
 
 /* iPhone */
 
-@media screen and (max-width: 480px) {
+@media only screen 
+and (max-device-width : 667px) {
 
 	#sidebar-button {
 		display: block;
@@ -402,7 +394,7 @@ a:hover {
 		display: none;
 	}
 
-    #email-navbar-item, #intro, #hover-prompt, #hover-prompt-pic, .footer-item, #footer {
+    #email-navbar-item, #hover-prompt, #hover-prompt-pic, .footer-item, #footer {
     	display: none;
     }
 
@@ -412,18 +404,77 @@ a:hover {
 
     #cover-trace {
     	width: 70%;
-    	margin-top: 10%;
+    	margin-top: 70%;
+    	margin-left: 0;
+    	order: 1;
     }
 
-    #name {
+    #body-content {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    }
+
+    #intro {
     	display: block;
     	font-family: 'Gotham', bold;
     	position: absolute;
-    	width: 100%;
-    	text-align: center;
-    	bottom: 20%;
-    	font-size: 20px;
+    	width: 75%;
+    	font-size: 80px;
+    	margin-top: 25%;
     }
+
+    #left-side {
+		margin-top: 25%;
+		width: 90%;
+	}
+
+	#right-side {
+		width: 90%;
+	}
+
+	#emily-pic {
+		width: 50%;
+		padding-bottom: 5%;
+	}
+
+	#description-title {
+		font-size: 70px;
+	}
+
+	#description {
+		font-size: 40px;
+		padding-top: 0;
+		padding-right: 5%;
+		padding-left: 5%;
+		padding-bottom: 0;
+		animation-name: fade-in;
+		animation-duration: 2s;
+	}
+
+	.experience-title {
+		font-size: 60px;
+	}
+
+	.experience-date, .experience-description {
+		font-size: 36px;
+	}
+
+    #about-content-wrapper {
+    	display: flex;
+    	justify-content: center;
+    	/*flex-direction: column;*/
+    	flex-wrap: wrap;
+    	width: 100%;
+    }
+
+    #bottom-fade:before {
+	  	display: none;
+	}
+
+	#top-fade:before {
+		display: none;
+	}
 
 }
 
